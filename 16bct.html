@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Hub - Learn Anytime, Anywhere</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Darker text color */
+        }
+        /* Custom styles for hero section background image */
+        .hero-background {
+            /* Using a placeholder image that suggests learning/coding */
+            background-image: url('https://placehold.co/1920x1080/3b82f6/ffffff?text=Online+Learning+Background');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* Gradient overlay for hero section */
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(29, 78, 216, 0.85), rgba(59, 130, 246, 0.7)); /* Stronger blue gradient */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 lg:px-16 rounded-b-lg">
+        <nav class="flex items-center justify-between flex-wrap">
+            <div class="flex items-center flex-shrink-0 text-blue-800 mr-6">
+                <!-- Book icon for Knowledge Hub -->
+                <svg class="fill-current h-8 w-8 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3L1 9l11 6 11-6-11-6zm0 10.93L5.07 9 12 5.07 18.93 9 12 13.93zm0 2.14L1 12l11 6 11-6-11-6z"/>
+                </svg>
+                <span class="font-bold text-xl tracking-tight">Knowledge Hub</span>
+            </div>
+            <div class="block lg:hidden">
+                <button class="flex items-center px-3 py-2 border rounded text-blue-500 border-blue-400 hover:text-blue-800 hover:border-blue-800">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="#courses" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 hover:text-blue-800 mr-4 p-2 rounded-md transition duration-300 ease-in-out hover:bg-blue-100">
+                        Courses
+                    </a>
+                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 hover:text-blue-800 mr-4 p-2 rounded-md transition duration-300 ease-in-out hover:bg-blue-100">
+                        About Us
+                    </a>
+                    <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-blue-600 hover:text-blue-800 p-2 rounded-md transition duration-300 ease-in-out hover:bg-blue-100">
+                        Contact
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded-full text-white bg-blue-600 hover:bg-blue-700 hover:border-transparent transition duration-300 ease-in-out mt-4 lg:mt-0">Enroll Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-background relative py-20 md:py-32 lg:py-48 text-white flex items-center justify-center text-center">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+                Unlock Your Potential. Master New Skills with Knowledge Hub.
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                Unlock your potential with expert-led courses in Web Development, Data Science, AI, and more.
+            </p>
+            <a href="#courses" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 hover:scale-105 transition duration-300 ease-in-out transform">
+                Explore Courses
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section (formerly Features) -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">Why Choose Knowledge Hub?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Card 1: Expert Instructors -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <div class="flex items-center justify-center w-16 h-16 bg-blue-500 text-white rounded-full mb-6 mx-auto">
+                        <!-- Graduation Cap Icon -->
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3L1 9l11 6 11-6-11-6zm0 10.93L5.07 9 12 5.07 18.93 9 12 13.93zm0 2.14L1 12l11 6 11-6-11-6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4 text-center">Expert Instructors</h3>
+                    <p class="text-gray-600 text-center">
+                        Learn from industry leaders and experienced educators passionate about teaching.
+                    </p>
+                </div>
+                <!-- Feature Card 2: Flexible Learning -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <div class="flex items-center justify-center w-16 h-16 bg-green-500 text-white rounded-full mb-6 mx-auto">
+                        <!-- Clock Icon -->
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 3H11v6l5.25 3.15.75-1.23-4.5-2.7V7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4 text-center">Flexible Learning</h3>
+                    <p class="text-gray-600 text-center">
+                        Study at your own pace, anytime, anywhere with our on-demand course library.
+                    </p>
+                </div>
+                <!-- Feature Card 3: Practical Skills -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <div class="flex items-center justify-center w-16 h-16 bg-purple-500 text-white rounded-full mb-6 mx-auto">
+                        <!-- Code Icon -->
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.6 16.6l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4zm-5.2 0L2 12l6-6 1.4 1.4-4.6 4.6 4.6 4.6-1.4 1.4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4 text-center">Practical Skills</h3>
+                    <p class="text-gray-600 text-center">
+                        Gain hands-on experience with real-world projects and practical exercises.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-blue-50">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <!-- Image representing online learning/students -->
+                <img src="https://placehold.co/600x400/60a5fa/ffffff?text=Online+Learning" alt="Online Learning" class="rounded-xl shadow-lg w-full h-auto object-cover">
+            </div>
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-800">About Knowledge Hub</h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    Knowledge Hub is a modern online learning platform designed to help students and professionals gain practical skills in high-demand fields like web development, data science, machine learning, and cybersecurity.
+                </p>
+                <p class="text-gray-600">
+                    Our mission is to provide affordable, high-quality education accessible to everyone, anywhere. We believe in empowering individuals to achieve their career goals through comprehensive and engaging courses.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses Section (formerly Services) -->
+    <section id="courses" class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">Popular Courses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course Card 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4 text-center">Web Development Bootcamp</h3>
+                    <p class="text-gray-600 text-center">
+                        Master front-end and back-end development to build dynamic web applications.
+                    </p>
+                </div>
+                <!-- Course Card 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4 text-center">Python Programming for Beginners</h3>
+                    <p class="text-gray-600 text-center">
+                        Start your coding journey with Python, from basics to advanced concepts.
+                    </p>
+                </div>
+                <!-- Course Card 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4 text-center">Data Structures & Algorithms</h3>
+                    <p class="text-gray-600 text-center">
+                        Deep dive into fundamental concepts crucial for software engineering interviews.
+                    </p>
+                </div>
+                <!-- Course Card 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4 text-center">Machine Learning with Python</h3>
+                    <p class="text-600 text-center">
+                        Explore machine learning algorithms and build intelligent applications.
+                    </p>
+                </div>
+                <!-- Course Card 5 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4 text-center">Cyber Security Fundamentals</h3>
+                    <p class="text-gray-600 text-center">
+                        Learn essential cybersecurity principles to protect digital assets.
+                    </p>
+                </div>
+                <!-- Course Card 6 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4 text-center">Data Science & Analytics</h3>
+                    <p class="text-gray-600 text-center">
+                        Analyze data, create visualizations, and make data-driven decisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">Get in Touch</h2>
+            <form class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200" placeholder="Your Name">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200" placeholder="your.email@example.com">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                    <textarea id="message" name="message" rows="6" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200" placeholder="Tell us about your learning goals or inquiry..."></textarea>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:shadow-outline shadow-md hover:scale-105 transition duration-300 ease-in-out transform">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-10 lg:px-16 rounded-t-lg">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <p>&copy; 2025 Knowledge Hub. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
